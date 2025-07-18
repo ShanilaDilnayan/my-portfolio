@@ -14,7 +14,7 @@ const About = () => {
             />
             <img
               src="https://placehold.co/100x100/FFC0CB/000000?text=Dog"
-              alt="Dog"
+              alt="shanila"
               className="absolute bottom-4 left-4 w-24 h-24 rounded-full border-4 border-white shadow-lg"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/FFC0CB/000000?text=Error"; }}
             />
