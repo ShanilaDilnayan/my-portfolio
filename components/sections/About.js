@@ -7,17 +7,17 @@ const About = () => {
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="https://placehold.co/400x400/6A0DAD/FFFFFF?text=About+Me"
+              src="/profile.jpg"
               alt="About Me"
               className="w-full h-auto object-cover rounded-3xl"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x400/6A0DAD/FFFFFF?text=Image+Error"; }}
             />
-            <img
-              src="https://placehold.co/100x100/FFC0CB/000000?text=Dog"
+            {/* <img
+              src=""
               alt="shanila"
               className="absolute bottom-4 left-4 w-24 h-24 rounded-full border-4 border-white shadow-lg"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/FFC0CB/000000?text=Error"; }}
-            />
+            /> */}
           </div>
         </div>
 
