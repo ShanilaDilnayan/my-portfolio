@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-[#110724] to-[#2A0F4F] opacity-70"></div>
-      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center justify-center md:justify-between">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center justify-center md:justify-between pt-32 lg:pt-0">
         <div className="text-left md:w-2/3 p-10">
           <p className="text-lg text-purple-300 mb-2">WELCOME TO MY WORLD</p>
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
@@ -21,13 +21,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center p-8">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center overflow-hidden shadow-2xl">
-            <img
-              src=""
-              alt="Shanila"
-              className="w-full h-full object-cover rounded-full transform scale-105"
-              onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/300x300/6A0DAD/FFFFFF?text=Image+Error"; }}
-            />
+          <div className='hidden md:block'>
+            <div className="relative w-64 h-64 md:w-110 md:h-110 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center overflow-hidden shadow-2xl">
+              <img
+                src="/shanila.jpg"
+                alt="Shanila"
+                className="w-full h-full object-cover rounded-full transform scale-105"
+                onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/300x300/6A0DAD/FFFFFF?text=Image+Error"; }}
+              />
+            </div>
           </div>
         </div>
       </div>
